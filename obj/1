@@ -1,0 +1,27 @@
+<?php 
+
+$human = new human();
+$res = $human->sleeping('とてもよく');
+echo $res;
+
+class human {
+  public $name = 'idesan';
+  public $eat = "食べる";
+
+
+  public function sleeping($param) {
+    $reaction = $this->cannot_thing($param , $this->eat);
+    $ret_raw = $param . "寝ました";
+    $ret = $ret_raw . $reaction;
+    return $this->name.$ret;
+  }
+
+  public function cannot_thing($param , $verb) {
+    if ($param == 'とてもよく') {
+      return $verb.'ことができませんでした';
+    } 
+  }
+}
+
+
+?>

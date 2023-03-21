@@ -1,0 +1,312 @@
+@charset 'utf-8';
+@import "compass";
+
+/* ======================= VARIABLE ====== */
+
+$get_img: "../images/";
+
+$size400:  "only screen and (max-width:400px)";
+$size540:  "only screen and (max-width:540px)";
+$size640:  "only screen and (max-width:640px)";
+$size750:  "only screen and (max-width:750px)";
+$size840: "only screen and (max-width:840px)";
+$size960:  "only screen and (max-width:960px)";
+$size1024:  "only screen and (max-width:1024px)";
+$size1100:  "only screen and (max-width:1100px)";
+$size1200:  "only screen and (max-width:1200px)";
+$size1380:  "only screen and (max-width:1380px)";
+$sp_none960:  "only screen and (min-width:960px)";
+
+$dark_grey:#191919;
+$blue:#2B2B2B;
+$white:#fff;
+$black:#2B2B2B;
+$l_gray:#F5F5F5;
+$gray:#707070;
+$d_gray:#888;
+$b_gray:#D3D3D3;
+$purple:#628AFA;
+$yellow:#FBE238;
+$pink:#FA6279;
+
+@mixin circle($size) {
+  width:$size;
+  height: $size;
+  @include border-radius(50%);
+}
+
+/* placeholder color */
+
+@mixin placeholderColor($color) {
+  &:placeholder-shown {
+      color: $color;
+  }
+  &::-webkit-input-placeholder {
+      color:$color;
+  }
+  &:-moz-placeholder {
+      color:$color;
+      opacity: 1;
+  }
+  &::-moz-placeholder {
+      color:$color;
+      opacity: 1;
+  }
+  &:-ms-input-placeholder {
+      color:$color;
+  }
+}
+
+/* ======================= IMPORT ====== */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+@import "_common.scss";
+@import "_top.scss";
+@import "_blog.scss";
+@import "_item.scss";
+@import "_register.scss";
+@import "_user.scss";
+@import "_brand.scss";
+@import "_shop.scss";
+@import "_form.scss";
+@import "_cart.scss";
+@import "_mypage.scss";
+
+/* ======================= BASE ====== */
+
+*{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,body{
+	margin: 0;
+  height: 100%;
+  background-color: #fff;
+}
+
+
+body a{
+  text-decoration: none;
+}
+
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.fm {
+  font-family: "游明朝", YuMincho,"Times New Roman", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+}
+
+.fg {
+  font-family: 'NotoSansCJKjp-Regular', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fe{
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fg_m{
+	font-family: 'NotoSansCJKjp-Medium', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fg_b{
+	font-family: 'NotoSansCJKjp-Bold', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fg_bl{
+	font-family: 'NotoSansCJKjp-Black', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fbm_l{
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 300;
+}
+
+.fbm_l{
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 300;
+}
+
+.fbm_r{
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 400;
+}
+
+.fbm_m{
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 500;
+}
+
+.fbm_b{
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 700;
+}
+
+.fbm_eb{
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 800;
+}
+
+.fbm_bl{
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 900;
+}
+
+.fe_price{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.f_price{
+  font-family: 'Bellefair', serif;
+  font-style: normal;
+}
+
+.icon{
+  font-family: 'ElegantIcons';
+}
+
+.common_inner{
+  max-width: 1200px;
+	min-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  &.height_100{
+	  height: 100%;
+  }
+  @media #{$size960}{
+    width: 100%;
+    min-width: inherit;
+  }
+}
+
+%common_a_transition{
+  @include transition(all 0.3s ease);
+  &:hover{
+    opacity: 0.8;
+  }
+  @media #{$size960}{
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+
+.common_pc{
+  display: block;
+  @media #{$size960}{
+    display: none;
+  }
+}
+
+.common_sp{
+  display: none;
+  @media #{$size960}{
+    display: block;
+  }
+}
+
+/* ======================= FONT ====== */
+
+@font-face {
+  font-family: 'NotoSansCJKjp-Bold';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Noto Sans CJK JP'),
+    local('NotoSansCJKjp-Bold'),
+    local('NotoSansJP-Regular'),
+    url('../fonts/NotoSansCJKjp-Bold.woff2') format('woff2'),
+    url('../fonts/NotoSansCJKjp-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NotoSansCJKjp-Regular';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Noto Sans CJK JP'),
+    local('NotoSansCJKjp-Regular'),
+    local('NotoSansJP-Regular'),
+    url('../fonts/NotoSansCJKjp-Regular.woff2') format('woff2'),
+    url('../fonts/NotoSansCJKjp-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NotoSansCJKjp-Medium';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Noto Sans CJK JP'),
+    local('NotoSansCJKjp-Medium'),
+    local('NotoSansJP-Medium'),
+    url('../fonts/NotoSansCJKjp-Medium.woff2') format('woff2'),
+    url('../fonts/NotoSansCJKjp-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NotoSansCJKjp-Black';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Noto Sans CJK JP'),
+    local('NotoSansCJKjp-Black'),
+    local('NotoSansJP-Black'),
+    url('../fonts/NotoSansCJKjp-Black.woff2') format('woff2'),
+    url('../fonts/NotoSansCJKjp-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NotoSansCJKjp-Light';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Noto Sans CJK JP'),
+    local('NotoSansCJKjp-Light'),
+    local('NotoSansJP-Light'),
+    url('../fonts/NotoSansCJKjp-Light.woff2') format('woff2'),
+    url('../fonts/NotoSansCJKjp-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Bellefair-Regular';
+  src: url("../fonts/Bellefair-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.mb_80{
+  margin: 0 0 80px;
+  @media #{$size640}{
+    margin: 0 0 50px;
+  }
+}
+
+.mb_50{
+  margin: 0 0 50px;
+  @media #{$size640}{
+    margin: 0 0 30px;
+  }
+}

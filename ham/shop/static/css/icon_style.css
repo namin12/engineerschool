@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?a9r79c');
+  src:  url('../fonts/icomoon.eot?a9r79c#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?a9r79c') format('truetype'),
+    url('../fonts/icomoon.woff?a9r79c') format('woff'),
+    url('../fonts/icomoon.svg?a9r79c#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 50px;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-alert:before {
+  content: "\e913";
+
+}
+.icon-header_user:before {
+    content: "\e900";}
+
+.icon-search:before {
+  content: "\e901";}
+
+.icon-shoes:before {
+  content: "\e902";}
+
+.icon-brand:before {
+  content: "\e903";}
+
+.icon-shop:before {
+  content: "\e904";}
+  
+.icon-cd_ranking:before {
+  content: "\e905";
+}
+.icon-fav:before {
+  content: "\e906";
+}
+.icon-item_ranking:before {
+  content: "\e907";
+}
+.icon-twitter:before {
+  content: "\e908";
+}
+.icon-after_follow:before {
+  content: "\e909";
+}
+.icon-before_fav:before {
+  content: "\e90a";
+}
+.icon-before_follow:before {
+  content: "\e90b";
+}
+.icon-blog:before {
+  content: "\e90c";
+}
+.icon-crown:before {
+  content: "\e90d";
+}
+.icon-facebook:before {
+  content: "\e90e";
+}
+.icon-followers:before {
+  content: "\e90f";
+}
+.icon-shirt:before {
+  content: "\e910";
+}
+.icon-coordinator:before {
+  content: "\e911";
+}
+.icon-cart:before {
+  content: "\e912";
+}

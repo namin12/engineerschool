@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 23 23">
+  <defs>
+    <clipPath id="clip-アートボード_10">
+      <rect width="23" height="23"/>
+    </clipPath>
+  </defs>
+  <g id="アートボード_10" data-name="アートボード – 10" clip-path="url(#clip-アートボード_10)">
+    <g id="Page-1" transform="translate(0.548)">
+      <g id="index">
+        <g id="Group-16">
+          <g id="Group-12">
+            <g id="icon_insta" transform="translate(0)">
+              <path id="Shape" d="M15.609,0H6.3A6.4,6.4,0,0,0,0,6.5v10A6.4,6.4,0,0,0,6.3,23h9.313a6.4,6.4,0,0,0,6.3-6.5V6.5A6.4,6.4,0,0,0,15.609,0ZM2.235,6.5A4.133,4.133,0,0,1,6.3,2.308h9.313A4.133,4.133,0,0,1,19.67,6.5v10a4.133,4.133,0,0,1-4.061,4.192H6.3A4.133,4.133,0,0,1,2.235,16.5Z"/>
+              <path id="Shape-2" data-name="Shape" d="M10.5,17.078a5.787,5.787,0,0,0,5.7-5.863,5.787,5.787,0,0,0-5.7-5.863,5.787,5.787,0,0,0-5.7,5.863A5.787,5.787,0,0,0,10.5,17.078Zm0-9.9a4.037,4.037,0,0,1,0,8.071,4.037,4.037,0,0,1,0-8.071Z" transform="translate(0.457 0.51)"/>
+              <ellipse id="Oval" cx="1.314" cy="1.353" rx="1.314" ry="1.353" transform="translate(15.333 4.059)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

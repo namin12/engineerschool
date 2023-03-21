@@ -1,0 +1,138 @@
+/*=================
+
+    register.scss
+
+=======================*/
+
+.register_wrap{
+	max-width: 950px;
+	width: 95%;
+	margin: 0 auto;
+	padding: 0 0 50px;
+	@media #{$size960}{
+		padding: 0 0 25px;
+	}
+	&.pb0{
+		padding: 0;
+	}
+	.register_main{
+		background: #f2f2f2;
+		padding: 50px 100px;
+		@media #{$size960}{
+			padding: 25px;
+		}
+	}
+	.register_form_block{
+		margin: 0 0 20px;
+	}
+	.register_form_title{
+		font-size: 14px;
+		color: #000;
+		margin: 0 0 10px;
+		@extend .fg;
+		span{
+			font-size: 11px;
+			background: $pink;
+			color: #fff;
+			padding: 3px 7px;
+			display: inline-block;
+			vertical-align: 0;
+			margin: 0 0 0 10px;
+		}
+	}
+	.register_common_input{
+		width: 100%;
+		font-size: 14px;
+		color: #000;
+		height: 40px;
+		border: 1px #939393 solid;
+		padding: 0 10px;
+		background: #fff;
+		margin: 0 0 10px;
+		@extend .fg;
+		@include placeholderColor(#bdbdbd);
+	}
+}
+
+.register_submit_btn{
+	font-size: 15px;
+	display: block;
+	max-width: 500px;
+	width: 95%;
+	margin: 0 auto;
+	height: 50px;
+	text-align: center;
+	padding: 0;
+	border: none;
+	background: $blue;
+	color: #fff;
+	cursor: pointer;
+	@include border-radius(40px);
+	@extend %common_a_transition;
+	@extend .fg;
+}
+
+/* U-2-1 */
+
+.register_text{
+	font-size: 16px;
+	color: #000;
+	line-height: 1.6;
+	margin: 0 0 40px;
+	@extend .fg;
+	@media #{$size750}{
+		font-size: 14px;
+		margin: 0 0 30px;
+	}
+	span{
+		color: $pink;
+	}
+	&.txt_center{
+		text-align: center;
+	}
+
+}
+
+.register_remind_text{
+	font-size: 11px;
+	background: #adadad;
+	color: #fff;
+	padding: 15px 10px;
+	line-height: 1.7;
+	@extend .fg;
+}
+
+/* U-2-2 */
+
+.register_btn{
+	font-size: 15px;
+	display: block;
+	max-width: 500px;
+	width: 95%;
+	margin: 0 auto;
+	padding: 15px 0;
+	text-decoration: none;
+	text-align: center;
+	border: 1px solid $black;
+	background: $white;
+	color: $black;
+	@include border-radius(40px);
+	@extend %common_a_transition;
+	font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 700;
+}
+
+/* U4 */
+
+.register_subtitle{
+	font-size: 14px;
+	line-height: 1.7;
+	text-align: center;
+	margin: 0 0 30px;
+	color: #000;
+	@extend .fg;
+	@media #{$size960}{
+		font-size: 12px;
+		margin: 0 0 20px;
+	}
+}

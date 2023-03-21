@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>はむれっつオンラインストア</title>
+<link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
+<meta name="description" content="●●●">
+<meta name="Keywords" content="●●●">
+<!-- ピンチによる拡大・縮小ができない -->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<!-- ピンチによる拡大・縮小ができる -->
+<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<meta property="og:type" content="website">
+<meta property="og:title" content=" ">
+<meta property="og:image" content="static/ogp.png">
+<meta property="og:site_name" content="はむれっつオンラインストア">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<link rel="stylesheet" href="static/css/style.css" media="all">
+<link rel="stylesheet" href="static/css/icon_style.css" media="all">
+<link rel="stylesheet" href="static/css/reset.css" media="all">
+<link rel="stylesheet" type="text/css" href="static/js/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="static/js/slick/slick-theme.css"/>
+<link rel="apple-touch-icon" href="static/webclip.png">
+<!-- <link href="static/font/awesome/font-awesome.min.css" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://use.typekit.net/ptk0dcd.css"><!---futura--->
+
+<script type="text/javascript" src="static/js/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="static/js/slick/slick.min.js"></script>
+<script type="text/javascript" src="static/js/flexibility.js"></script>
+<!---mplus 1p--->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+<!---/mplus 1p--->
+<!---Oswald--->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+<!---/Oswald--->
+<!--[if lt IE 9]><script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+</head>
+
+<body>
+
+  <header>
+    <div class="header_wrap">
+      <div class="pc_header">
+        <div class="pc_header_inner">
+          <a href="index.html" class="pc_header_logo">
+            <img src="static/images/common/logo.svg" alt="はむれっつオンラインストア">
+          </a>
+          <div class="pc_header_menu_block">
+            <ul class="pc_header_menu_list">
+              <li class="pc_header_menu_item">
+                <a href="item_list.html" class="pc_header_menu_link">
+                  <div class="pc_header_menu_icon">
+                    <img src="static/images/common/icon_item.svg" alt="アイテム">
+                  </div>
+                  <div class="pc_header_menu_detail">
+                    <p class="pc_header_menu_title_en">
+                      ITEM
+                    </p>
+                    <p class="pc_header_menu_title">
+                      アイテム
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="pc_header_menu_item">
+                <a href="guide.html" class="pc_header_menu_link">
+                  <div class="pc_header_menu_icon">
+                    <img src="static/images/common/icon_guide.svg" alt="アイテム">
+                  </div>
+                  <div class="pc_header_menu_detail">
+                    <p class="pc_header_menu_title_en">
+                      SHOPPING GUIDE
+                    </p>
+                    <p class="pc_header_menu_title">
+                      ショッピングガイド
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="pc_header_menu_item">
+                <a href="faq.html" class="pc_header_menu_link">
+                  <div class="pc_header_menu_icon">
+                    <img src="static/images/common/icon_faq.svg" alt="よくある質問">
+                  </div>
+                  <div class="pc_header_menu_detail">
+                    <p class="pc_header_menu_title_en">
+                      FAQ
+                    </p>
+                    <p class="pc_header_menu_title">
+                      よくある質問
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="pc_header_menu_item">
+                <a href="../index.html" class="pc_header_menu_link">
+                  <div class="pc_header_menu_icon">
+                    <img src="static/images/common/icon_ham.svg" alt="はむれっつ">
+                  </div>
+                  <div class="pc_header_menu_detail">
+                    <p class="pc_header_menu_title_en">
+                      SITE
+                    </p>
+                    <p class="pc_header_menu_title">
+                      はむれっつ公式サイト
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="pc_header_menu_btn">
+              <a href="login.html" class="pc_header_login_btn">
+                ログイン
+              </a>
+              <a href="index.html" class="pc_header_logout_btn" style="display:none;">
+                ログアウト
+              </a>
+              <a href="register.html" class="pc_header_register_btn">
+                会員登録
+              </a>
+              <a href="mypage.html" class="pc_header_mypage_btn" style="display:none;">
+                マイページ
+              </a>
+            </div>
+            <ul class="pc_shop_menu_list">
+              <li class="pc_shop_menu_item">
+                <a href="favorite.html" class="pc_shop_menu_link">
+                  <img src="static/images/common/icon_favorite.svg" alt="お気に入りリスト">
+                </a>
+              </li>
+              <li class="pc_shop_menu_item">
+                <a href="shopping_cart.html" class="pc_shop_menu_link pc_cart">
+                 <img src="static/images/common/icon_cart.svg" alt="お買い物カゴ">
+                 <span class="header_cart_num">
+                   <small>1</small>
+                 </span>
+               </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sp_header">
+     <div class="header_sp_wrap">
+       <a href="index.html" class="header_sp_logo">
+         <img src="static/images/common/logo.svg" alt="はむれっつオンラインストア">
+       </a>
+       <div type="button" class="header_menu_btn" id="MenuOpen">
+         <img src="static/images/common/menu_hamburger.svg" alt="メニュー">
+       </div>
+     </div>
+     <div class="common_filter" id="HeaderFilter">
+     </div>
+     <div class="header_popup_block" id="HeaderMenu">
+       <div class="header_popup_inner">
+         <div class="header_close_btn" id="MenuClose">
+           <img src="static/images/common/menu_close.svg" alt="メニュー">
+         </div>
+         <ul class="sp_main_menu_list">
+           <li class="sp_main_menu_item">
+             <a href="item_list.html" class="sp_main_menu_link">
+               <div class="sp_main_menu_link_icon">
+                 <img src="static/images/common/icon_item.svg" alt="アイテム一覧">
+               </div>
+               <div class="sp_main_menu_link_detail">
+                 <p class="sp_main_menu_link_title_en">
+                   ITEM
+                 </p>
+                 <p class="sp_main_menu_link_title">
+                   アイテム
+                 </p>
+               </div>
+             </a>
+           </li>
+           <li class="sp_main_menu_item">
+             <a href="guide.html" class="sp_main_menu_link">
+               <div class="sp_main_menu_link_icon">
+                 <img src="static/images/common/icon_guide.svg" alt="ショッピングガイド">
+               </div>
+               <div class="sp_main_menu_link_detail">
+                 <p class="sp_main_menu_link_title_en">
+                   SHOPPING GUIDE
+                 </p>
+                 <p class="sp_main_menu_link_title">
+                   ショッピングガイド
+                 </p>
+               </div>
+             </a>
+           </li>
+           <li class="sp_main_menu_item">
+             <a href="faq.html" class="sp_main_menu_link">
+               <div class="sp_main_menu_link_icon">
+                 <img src="static/images/common/icon_faq.svg" alt="よくある質問">
+               </div>
+               <div class="sp_main_menu_link_detail">
+                 <p class="sp_main_menu_link_title_en">
+                   FAQ
+                 </p>
+                 <p class="sp_main_menu_link_title">
+                   よくある質問
+                 </p>
+               </div>
+             </a>
+           </li>
+           <li class="sp_main_menu_item">
+             <a href="../index.html" class="sp_main_menu_link">
+               <div class="sp_main_menu_link_icon">
+                 <img src="static/images/common/icon_ham.svg" alt="はむれっつ公式サイト">
+               </div>
+               <div class="sp_main_menu_link_detail">
+                 <p class="sp_main_menu_link_title_en">
+                   SITE
+                 </p>
+                 <p class="sp_main_menu_link_title">
+                   はむれっつ公式サイト
+                 </p>
+               </div>
+             </a>
+           </li>
+         </ul>
+         <ul class="sp_shop_sub_menu_list">
+           <li class="sp_shop_sub_menu_item">
+             <a href="login.html" class="sp_login_btn">
+               ログイン
+             </a>
+           </li>
+           <!---
+           <li class="sp_shop_sub_menu_item">
+             <a href="index.html" class="sp_login_btn">
+               ログアウト
+             </a>
+           </li>
+           --->
+           <li class="sp_shop_sub_menu_item">
+             <a href="register.html" class="sp_register_btn">
+               会員登録
+             </a>
+           </li>
+           <!---
+           <li class="sp_shop_sub_menu_item">
+             <a href="mypage.html" class="sp_register_btn">
+               マイページ
+             </a>
+           </li>
+           --->
+         </ul>
+         <ul class="sp_shop_menu_list">
+           <li class="sp_shop_menu_item">
+             <a href="favorite.html" class="sp_shop_menu_link">
+               <img src="static/images/common/icon_favorite.svg" alt="お気に入りリスト">
+             </a>
+           </li>
+           <li class="sp_shop_menu_item">
+             <a href="shopping_cart.html" class="sp_shop_menu_link sp_cart">
+              <span class="header_cart_num">
+                <small>1</small>
+              </span>
+              <img src="static/images/common/icon_cart.svg" alt="お買い物カゴ">
+            </a>
+           </li>
+         </ul>
+       </div>
+     </div><!---/header_popup_block--->
+  </header>
+
+<main class="page_main">
+  <div class="pankuzu_wrap">
+   <div class="common_wrap">
+     <div class="common_inner">
+       <ul class="pankuzu_list">
+         <li class="pankuzu_item">
+           <a href="index.html" class="pankuzu_link">
+             TOP
+           </a>
+         </li>
+         <li class="pankuzu_item">
+           利用規約
+         </li>
+       </ul>
+     </div>
+   </div>
+  </div><!---/pankuzu--->
+	<div class="register_wrap pb0">
+		<div class="common_column_wrap">
+			<div class="common_main_block">
+				<h1 class="common_main_title">
+					<span class="title_text_jp">利用規約</span>
+          <span class="title_text_en">TERMS OF USE</span>
+				</h1>
+				<div class="privacy_block">
+          <p class="text">
+            この利用規約（以下、「本規約」といいます。）は、合同会社FIELD（以下、「当社」といいます。）がこのウェブサイト上で提供するオンラインショップ「はむれっつオンラインストア」（以下、「本サービス」といいます。）の利用条件を定めるものです。本サービスを通じて購入などの利用を行なった皆さま（以下、「ユーザー」といいます。）には、本規約に従って、本サービスをご利用いただきます。
+					</p>
+					<h2 class="title">
+						第1条（適用）
+					</h2>
+          <ul class="list_type01">
+						<li class="item">
+							本規約は、ユーザーと当社との間の本サービスの利用に関わる一切の関係に適用されるものとします。
+						</li>
+						<li class="item">
+							当社は本サービスに関し、本規約のほか、ご利用にあたってのルール等、各種の定め（以下、「個別規定」といいます。）をすることがあります。これら個別規定はその名称のいかんに関わらず、本規約の一部を構成するものとします。
+						</li>
+						<li class="item">
+							本規約の定めが前項の個別規定の定めと矛盾する場合には、個別規定において特段の定めなき限り、個別規定の定めが優先されるものとします。
+						</li>
+					</ul>
+					<h2 class="title">
+						第2条（売買契約）
+					</h2>
+					<ul class="list_type01">
+						<li class="item">
+							本サービスにおいては、ユーザーが当社に対して購入の申し込みをし、これに対して当社が当該申し込みを承諾した旨の通知をすることによって売買契約が成立するものとします。なお、当該商品の所有権は、当社が商品を配送業者に引き渡したときに、ユーザーに移転するものとします。
+						</li>
+						<li class="item">
+							当社は、ユーザーが以下のいずれかの事由に該当する場合には、当該ユーザーに事前に通知することなく、前項の売買契約を解除することができるものとします。
+              <ul class="sub_list">
+                <li class="sub_item">
+                  ユーザーが本規約に違反した場合
+                </li>
+                <li class="sub_item">
+                  届け先不明や長期の不在のため商品の配送が完了しない場合
+                </li>
+                <li class="sub_item">
+                  その他当社とユーザーの信頼関係が損なわれたと認める場合
+                </li>
+              </ul>
+						</li>
+						<li class="item">
+							本サービスに関する決済方法、配送方法、購入の申し込みのキャンセル方法、または返品方法等については、別途当社が定める方法によります。
+						</li>
+            <li class="item">
+							本サービスの対象は（配達先、利用者住所を含みます）日本国内とします。
+						</li>
+					</ul>
+					<h2 class="title">
+						第3条（返品）
+					</h2>
+          <p class="text">
+            当社は、以下に該当する場合に限り、商品の返品を受け付けます。
+          </p>
+          <ul class="list_type01">
+            <li class="item">
+              商品の品質が契約内容に適合しない場合（汚れ、破れ、ほつれ、色落ちなどがの破損がある場合、又は本サイト上の販売ページ上の当該商品の品質説明と異なる場合）
+            </li>
+            <li class="itme">
+              ご注文内容と異なる種類又は数の商品が到着した場合
+            </li>
+          </ul>
+          <h2 class="title">
+						第4条（知的財産権）
+					</h2>
+          <p class="text">
+            本サービスによって提供される商品写真その他のコンテンツ（以下「コンテンツ」といいます）の著作権又はその他の知的所有権は、当社及びコンテンツ提供者などの正当な権利者に帰属し、ユーザーは、これらを無断で複製、転載、改変、その他の二次利用をすることはできません。
+          </p>
+          <h2 class="title">
+            第5条（禁止事項）
+					</h2>
+          <p class="text">
+            ユーザーは、本サービスの利用にあたり、以下の行為をしてはならないものとします。
+          </p>
+          <ul class="list_type01">
+            <li class="item">
+              法令または公序良俗に違反する行為
+            </li>
+            <li class="item">
+              犯罪行為に関連する行為
+            </li>
+            <li class="item">
+              本サービスに含まれる著作権、商標権その他の知的財産権を侵害する行為
+            </li>
+            <li class="item">
+              本サービスによって得られた情報を商業的に利用する行為
+            </li>
+            <li class="item">
+              当社のサーバーまたはネットワークの機能を破壊したり、妨害したりする行為
+            </li>
+            <li class="item">
+              不正アクセスをし、またはこれを試みる行為
+            </li>
+            <li class="item">
+              他のユーザーに関する個人情報等を収集または蓄積する行為
+            </li>
+            <li class="item">
+              他のユーザーに成りすます行為
+            </li>
+            <li class="item">
+              当社のサービスに関連して、反社会的勢力に対して直接または間接に利益を供与する行為
+            </li>
+            <li class="item">
+              その他、当社が不適切と判断する行為
+            </li>
+          </ul>
+          <h2 class="title">
+            第6条（本サービスの提供の停止等）
+					</h2>
+          <ul class="list_type01">
+            <li class="item">
+              当社は、以下のいずれかに該当する場合には、事前の通知なく、ユーザーに対して、本サービスの全部もしくは一部の利用を制限し、またはユーザーとしての登録を抹消することができるものとします。
+              <ul class="sub_list">
+                <li class="sub_item">
+                  本規約のいずれかの条項に違反した場合
+                </li>
+                <li class="sub_item">
+                  登録事項に虚偽の事実があることが判明した場合
+                </li>
+                <li class="sub_item">
+                  決済手段として当該ユーザーが届け出たクレジットカードが利用停止となった場合
+                </li>
+                <li class="sub_item">
+                  料金等の支払債務の不履行があった場合
+                </li>
+                <li class="sub_item">
+                  当社からの連絡に対し、一定期間返答がない場合
+                </li>
+                <li class="sub_item">
+                  その他、当社が本サービスの利用を適当でないと判断した場合
+                </li>
+              </ul>
+            </li>
+            <li class="item">
+              当社は、本条に基づき当社が行った行為によりユーザーに生じた損害について、一切の責任を負いません
+            </li>
+          </ul>
+          <h2 class="title">
+						第8条（保証の否認および免責事項）
+					</h2>
+          <ul class="list_type01">
+            <li class="item">
+              当社は、本サービスに事実上または法律上の瑕疵（安全性、信頼性、正確性、完全性、有効性、特定の目的への適合性、セキュリティなどに関する欠陥、エラーやバグ、権利侵害などを含みます。）がないことを保証するものではありません。
+            </li>
+            <li class="item">
+              当社は、本サービスによってユーザーに生じたあらゆる損害について、一切の責任を負いません。ただし、本サービスに関する当社とユーザーとの間の契約（本規約を含みます。）が消費者契約法に定める消費者契約となる場合、この免責規定は適用されませんが、この場合であっても、当社は、当社の過失（重過失を除きます。）による債務不履行または不法行為によりユーザーに生じた損害のうち特別な事情から生じた損害（当社またはユーザーが損害発生につき予見し、または予見し得た場合を含みます。）について一切の責任を負いません。
+            </li>
+            <li class="item">
+              当社は、本サービスに関して、ユーザーと他のユーザーまたは第三者との間において生じた取引、連絡または紛争等について一切責任を負いません。
+            </li>
+          </ul>
+          <h2 class="title">
+						第9条（サービス内容の変更等）
+					</h2>
+          <p class="text">
+            当社は、ユーザーに通知することなく、本サービスの内容を変更しまたは本サービスの提供を中止することができるものとし、これによってユーザーに生じた損害について一切の責任を負いません。
+          </p>
+          <h2 class="title">
+            第10条（利用規約の変更）
+					</h2>
+          <p class="text">
+            当社は、必要と判断した場合には、ユーザーに通知することなくいつでも本規約を変更することができるものとします。なお、本規約の変更後、本サービスの利用を開始した場合には、当該ユーザーは変更後の規約に同意したものとみなします。
+          </p>
+          <h2 class="title">
+            第11条（個人情報の取扱い）
+          </h2>
+          <p class="text">
+            当社は、本サービスの利用によって取得する個人情報については、当社「プライバシーポリシー」に従い適切に取り扱うものとします。
+          </p>
+          <h2 class="title">
+            第12条（通知または連絡）
+          </h2>
+          <p class="text">
+            ユーザーと当社との間の通知または連絡は、当社の定める方法によって行うものとします。当社は、ユーザーから、当社が別途定める方式に従った変更届け出がない限り、現在登録されている連絡先が有効なものとみなして当該連絡先へ通知または連絡を行い、これらは、発信時にユーザーへ到達したものとみなします。
+          </p>
+          <h2 class="title">
+            第13条（権利義務の譲渡の禁止）
+          </h2>
+          <p class="text">
+            ユーザーは、当社の書面による事前の承諾なく、利用契約上の地位または本規約に基づく権利もしくは義務を第三者に譲渡し、または担保に供することはできません。
+          </p>
+          <h2 class="title">
+            第14条（準拠法・裁判管轄）
+          </h2>
+          <ul class="list_type01">
+            <li class="item">
+              本規約の解釈にあたっては、日本法を準拠法とします。なお、本サービスに関しては、国際物品売買契約に関する国際連合条約の適用を排除するものとします。
+            </li>
+            <li class="item">
+              本サービスに関して紛争が生じた場合には、当社の本店所在地を管轄する裁判所を専属的合意管轄裁判所とします。
+            </li>
+          </ul>
+          <p class="text">
+            2022年7月1日　制定
+          </p>
+          <p class="text right">
+            以上
+          </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+
+<footer>
+  <div class="footer_ham_wrap">
+    <div class="footer_ham_block">
+      <div class="footer_ham">
+        <img src="static/images/common/img_footer_ham.svg" alt="はむれっつ">
+      </div>
+    </div>
+    <div class="footer_regi_block">
+      <img src="static/images/common/footer_regi.svg" alt="">
+    </div>
+  </div>
+  <div class="footer_top">
+    <div class="common_wrap">
+      <div class="common_inner">
+        <a href="../index.html" class="footer_logo">
+          <img src="static/images/common/logo.svg" alt="HALTEN">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer_bottom">
+    <div class="common_wrap">
+      <div class="common_inner">
+        <div class="footer_menu_block">
+          <ul class="footer_main_menu_list">
+            <li class="footer_main_menu_item">
+              <a href="https://field.asia/" class="footer_main_menu_link">
+                運営会社
+              </a>
+            </li>
+            <li class="footer_main_menu_item">
+              <a href="privacy.html" class="footer_main_menu_link">
+                プライバシーポリシー
+              </a>
+            </li>
+            <li class="footer_main_menu_item">
+              <a href="terms.html" class="footer_main_menu_link">
+                利用規約
+              </a>
+            </li>
+            <li class="footer_main_menu_item">
+              <a href="notation.html" class="footer_main_menu_link">
+                特定商取引法に基づく表記
+              </a>
+            </li>
+            <li class="footer_main_menu_item">
+              <a href="guide.html" class="footer_main_menu_link">
+                ご利用ガイド
+              </a>
+            </li>
+            <li class="footer_main_menu_item">
+              <a href="contact.html" class="footer_main_menu_link">
+                お問い合わせ
+              </a>
+            </li>
+          </ul>
+          <a href="../index.html" class="footer_site_banner">
+            <img src="static/images/common/site_banner.svg" alt="はむれっつ公式サイトはこちら">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copy_block">
+    <div class="common_wrap">
+      <div class="common_inner">
+        <p class="copy">
+          Copyright &copy; はむれっつ All rights reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="static/js/common.js">
+</script>
+</body>
+</html>
