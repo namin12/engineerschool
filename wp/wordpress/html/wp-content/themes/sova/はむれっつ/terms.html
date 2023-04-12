@@ -1,0 +1,531 @@
+<!DOCTYPE HTML>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <title>はむれっつ</title>
+  <link rel="shortcut icon" type="image/x-icon" href="<?= get_template_directory_uri();?>/static/favicon.ico">
+  <meta name="viewport" content="width=device-width">
+  <!---
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+  --->
+  <meta name="description" content="">
+  <meta name="keyword
+  s" content="">
+  <meta name="author" content="">
+  <meta property="og:title" content="はむれっつ">
+  <meta property="og:type" content="">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="はむれっつ">
+  <meta property="og:image" content="static/ogp.png">
+  <link href="<?= get_template_directory_uri();?>/static/css/reset.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="<?= get_template_directory_uri();?>/static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="<?= get_template_directory_uri();?>/static/animate/animate.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri();?>/static/js/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri();?>/static/js/slick/slick-theme.css"/>
+  <link rel="apple-touch-icon" href="<?= get_template_directory_uri();?>/static/webclip.png">
+  <script type="text/javascript" src="<?= get_template_directory_uri();?>/static/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="<?= get_template_directory_uri();?>/static/js/slick/slick.min.js"></script>
+  <script src="<?= get_template_directory_uri();?>/static/animate/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!---mplus 1p--->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <!---/mplus 1p--->
+  <!---Oswald--->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <!---/Oswald--->
+</head>
+ <body>
+   <header>
+     <div class="header_wrap">
+       <div class="header_inner">
+         <a href="index.html" class="header_logo">
+           <img src="<?= get_template_directory_uri();?>/static/images/common/logo.svg" alt="はむれっつ">
+         </a>
+         <div class="header_menu_btn_wrap" type="button" id="MenuOpen">
+           <div class="header_menu_btn_hamburger">
+             <img src="<?= get_template_directory_uri();?>/static/images/common/menu_hamburger.svg" alt="MENU">
+           </div>
+           <div class="header_menu_btn_ham animate__animated animate__headShake animate__infinite wow" data-wow-duration="2s" data-wow-iteration="3">
+             <img src="<?= get_template_directory_uri();?>/static/images/common/menu_img.svg" alt="はむれっつ">
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="header_popup_block" id="HeaderMenu">
+       <div class="header_popup_inner">
+         <div class="header_close_btn_wrap">
+           <div class="header_close_btn" id="MenuClose">
+            <img src="<?= get_template_directory_uri();?>/static/images/common/menu_close.svg" alt="メニュー">
+           </div>
+         </div>
+         <div class="header_menu_wrap">
+           <ul class="header_menu_list">
+             <li class="header_menu_item">
+               <a href="index.html" class="header_menu_link">
+                 トップページ
+               </a>
+             </li>
+             <li class="header_menu_item">
+               <a href="column.html" class="header_menu_link">
+                 記事一覧
+               </a>
+             </li>
+             <li class="header_menu_item">
+               <a href="comic.html" class="header_menu_link">
+                 漫画一覧
+               </a>
+             </li>
+             <li class="header_menu_item">
+               <a href="shop/index.html" class="header_menu_link">
+                 オンラインストア
+               </a>
+             </li>
+             <li class="header_menu_item">
+               <a href="contact.html" class="header_menu_link">
+                 お問い合わせ
+               </a>
+             </li>
+           </ul>
+           <ul class="header_sub_menu_list">
+             <li class="header_sub_menu_item">
+               <a href="https://store.line.me/stickershop/author/68502/ja" class="header_sub_menu_link">
+                 LINEスタンプ
+               </a>
+             </li>
+             <li class="header_sub_menu_item">
+               <a href="https://field.asia/" class="header_sub_menu_link">
+                 運営会社
+               </a>
+             </li>
+             <li class="header_sub_menu_item">
+               <a href="http://bar-hamlets.com/" class="header_sub_menu_link">
+                 BAR-HAMLETS
+               </a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </header>
+   <main id="top">
+     <div class="common_page_content Top_back" id="top_content">
+       <div class="common_wrap">
+         <div class="common_inner">
+           <div class="pankuzu_wrap">
+             <ul class="pankuzu_list">
+               <li class="pankuzu_item">
+                 <a href="index.html" class="pankuzu_link">
+                   <img src="<?= get_template_directory_uri();?>/static/images/common/icon_home.svg" alt="" class="home_icon">
+                 </a>
+               </li>
+               <li class="pankuzu_item">
+                 利用規約
+               </li>
+             </ul>
+           </div><!---/pankuzu--->
+         </div>
+       </div>
+       <section class="contact_page">
+         <div class="common_wrap">
+           <div class="common_inner_s">
+             <h1 class="terms_title">
+               利用規約
+             </h1>
+             <p class="terms_title_en">
+               TERMS
+             </p>
+             <div class="terms_wrap">
+               <div class="terms_block">
+                 <p class="terms_block_text">
+                   この利用規約（以下、「本規約」といいます。）は、合同会社FIELD（以下、「当社」といいます。）が企画・運営する「はむれっつ」で提供するサービス（以下、「本サービス」といいます。）の利用条件を定めるものです。<br>
+                   本サービスのいずれかを利用する方(以下、「利用者」といいます。)には、本規約に従って、本サービスをご利用いただきます。<br>
+                   必ずご一読の上、ご同意いただき当社サービスをご利用下さい。
+                 </p>
+               </div>
+               <div class="terms_block">
+                 <h2 class="terms_block_title">
+                   第1条：適用
+                 </h2>
+                 <p class="terms_block_text">
+                   本サービスを通じて提供される本サービスの利用者、また本サービスの利用に関わる一切の関係に適用されます。
+                 </p>
+               </div>
+               <div class="terms_block">
+                 <h2 class="terms_block_title">
+                   第2条：利用料金および支払方法
+                 </h2>
+                 <p class="terms_block_text">
+                   当社は本サービスを利用者に対し、原則無料で提供します。但し、一部有料サービスや商品の販売を行うことがあります。その場合、当社が別途定め、本ウェブサイトに表示する利用料金を、当社が指定する方法により支払うものとします。
+                 </p>
+               </div>
+               <div class="terms_block">
+                 <h2 class="terms_block_title">
+                   第3条：禁止事項
+                 </h2>
+                 <p class="terms_block_text">
+                   利用者は、本サービスの利用にあたり、以下の行為をしてはなりません。
+                 </p>
+                 <ul class="terms_list">
+                   <li class="terms_item">
+                     当社に対し虚偽の情報を登録、または提供すること
+                   </li>
+                   <li class="terms_item">
+                     他人になりすまして情報などを送信する行為
+                   </li>
+                   <li class="terms_item">
+                     当社、他の利用者または第三者の著作権等知的財産権を侵害する行為
+                   </li>
+                   <li class="terms_item">
+                     本サービスで得た情報を、本サービスの利用目的の範囲を超えて第三者に譲渡し、又は商業的に利用する行為
+                   </li>
+                   <li class="terms_item">
+                     コンピューター・ウィルスその他の有害なコンピューター・プログラムを含む情報を送信する行為、及びその他の方法でネットワークの機能を破壊したり、妨害したりする行為
+                   </li>
+                   <li class="terms_item">
+                     本サービスの運営を妨げる行為
+                   </li>
+                   <li class="terms_item">
+                     個人や団体を誹謗中傷する行為
+                   </li>
+                   <li class="terms_item">
+                     不正な目的を持って本サービスを利用する行為
+                   </li>
+                   <li class="terms_item">
+                     当社が許諾しない本サービス上での宣伝、広告、勧誘、または営業行為
+                   </li>
+                   <li class="terms_item">
+                     面識のない異性との出会いを目的とした行為
+                   </li>
+                   <li class="terms_item">
+                     当社のサービスに関連して、反社会的勢力に対して直接または間接に利益を供与する行為
+                   </li>
+                   <li class="terms_item">
+                     犯罪行為に関連する行為
+                   </li>
+                   <li class="terms_item">
+                     法令、または公序良俗に反する行為
+                   </li>
+                   <li class="terms_item">
+                     その他本サービスの提供を継続することが困難であると当社が判断する一切の行為、及び不適切な行為
+                   </li>
+                 </ul>
+               </div>
+               <div class="terms_block">
+                 <h2 class="terms_block_title">
+                   第4条：本サービスの提供の停止等
+                 </h2>
+                 <p class="terms_block_text">
+                   当社は、以下のいずれかの事由があると判断した場合、利用者に事前に通知することなく本サービスの全部または一部の提供を停止または中断することができるものとします。
+                 </p>
+                 <ul class="terms_list">
+                   <li class="terms_item">
+                     本サービスにかかるコンピュータシステムの保守点検または更新を行う場合
+                   </li>
+                   <li class="terms_item">
+                     地震、落雷、火災、停電または天災などの不可抗力により、本サービスの提供が困難となった場合
+                   </li>
+                   <li class="terms_item">
+                     コンピュータまたは通信回線等が事故により停止した場合
+                   </li>
+                   <li class="terms_item">
+                     その他、当社が本サービスの提供が困難と判断した場合
+                   </li>
+                 </ul>
+                 <p class="terms_block_text">
+                  当社は、本サービスの提供の停止または中断により、利用者または第三者が被ったいかなる不利益または損害について、理由を問わず一切の責任を負わないものとします。
+                 </p>
+               </div>
+               <div class="terms_block">
+                 <h2 class="terms_block_title">
+                   第5条：著作権等
+                 </h2>
+                 <p class="terms_block_text">
+                   本サイトに掲載されているコンテンツに関する著作権および商標権その他知的財産権は、当社もしくは当該情報の提供元に帰属し、また、本サービスに関する著作権および商標権その他知的財産権についても、当社に帰属します。<br>
+                   利用者は、本サービスにより提供されるコンテンツの全部または一部を、当社の事前の承諾なしに、転載、複製、出版、放送、公衆送信等その他著作権等を侵害する行為を、無断で行うことはできず、また第三者に行わせることはできません。
+                 </p>
+               </div>
+               <div class="terms_block">
+                 <h2 class="terms_block_title">
+                   第6条：リンクについて
+                 </h2>
+                 <p class="terms_block_text">
+                   本サイトからリンクを貼っている第三者のウェブサイト（以下リンクサイトと言います）の内容およびリンクサイトの利用により生じる一切の損害について、当社はいかなる責任を負うものではありません。<br>
+                   当サイトへのリンクは原則自由ですが、リンクされているウェブサイトの内容（公序良俗違反など）やリンクの方法によっては、リンクをお断りする場合があります。
+                 </p>
+               </div>
+               <div class="terms_block">
+                 <h2 class="terms_block_title">
+                   第7条：保証の否認および免責事項
+                 </h2>
+                 <ul class="terms_list">
+                   <li class="terms_item">
+                     当社は、本サービスに事実上または法律上の瑕疵（安全性、信頼性、正確性、完全性、有効性、特定の目的への適合性、セキュリティなどに関する欠陥、エラーやバグ、権利侵害などを含みます。）がないことを明示的にも黙示的にも保証しておりません。
+                   </li>
+                   <li class="terms_item">
+                     当社は、本サービスに起因して利用者に生じたあらゆる損害について、当社の故意又は重過失による場合を除き、一切の責任を負いません。ただし、本サービスに関する当社と利用者との間の契約（本規約を含みます。）が消費者契約法に定める消費者契約となる場合、この免責規定は適用されません。
+                   </li>
+                   <li class="terms_item">
+                     当社は、本サービスに関して、利用者と他の利用者または第三者との間において生じた取引、連絡または紛争等について一切責任を負いません。
+                   </li>
+                 </ul>
+               </div>
+               <div class="terms_block">
+                 <h2 class="terms_block_title">
+                   第8条：利用制限および登録抹消
+                 </h2>
+                 <ul class="terms_list">
+                   <li class="terms_item">
+                     当社は、利用者が以下のいずれかに該当する場合には、事前の通知なく、利用者に対して、本サービスの全部もしくは一部の利用を制限し、または利用者としての登録を抹消することが通告なくできるものとします。
+                     <ul class="terms_list">
+                       <li class="terms_item">
+                         本規約のいずれかに違反すると当社が判断した場合
+                       </li>
+                       <li class="terms_item">
+                         当社が本サービスの利用を適当でないと判断した場合
+                       </li>
+                     </ul>
+                   </li>
+                   <li class="terms_item">
+                     当社は、本条に基づき当社が行った行為により利用者に生じた損害について、一切の責任を負いません。
+                   </li>
+                 </ul>
+               </div>
+               <div class="terms_block">
+                 <h2 class="terms_block_title">
+                   第9条：損害賠償
+                 </h2>
+                 <p class="terms_block_text">
+                   利用者は、本サービスの利用に関連して当社または第三者に損害を与えた場合には、かかる損害を直ちに賠償するものとします。利用者の本規約違反もしくは利用者による第三者の権利侵害に起因または関連して生じたすべての請求について、利用者の費用と責任で解決するものとします。
+                 </p>
+               </div>
+               <div class="terms_block">
+                 <h2 class="terms_block_title">
+                   第10条：サービス内容の変更等
+                 </h2>
+                 <p class="terms_block_text">
+                   当社は、利用者への事前の告知をもって、本サービスの内容を変更、追加または廃止することがあり、利用者はこれを承諾するものとします。
+                 </p>
+               </div>
+               <div class="terms_block">
+                 <h2 class="terms_block_title">
+                   第11条：利用規約の変更
+                 </h2>
+                 <ul class="terms_list">
+                   <li class="terms_item">
+                     当社は以下の場合には、利用者の個別の同意を要せず、本規約を変更することができるものとします。
+                     <ul class="terms_list">
+                       <li class="terms_item">
+                         本規約の変更が利用者の一般の利益に適合するとき。
+                       </li>
+                       <li class="terms_item">
+                         本規約の変更が本サービス利用契約の目的に反せず、かつ、変更の必要性、変更後の内容の相当性その他の変更に係る事情に照らして合理的なものであるとき。
+                       </li>
+                     </ul>
+                   </li>
+                   <li class="terms_item">
+                     当社は利用者に対し、前項による本規約の変更にあたり、事前に、本規約を変更する旨及び変更後の本規約の内容並びにその効力発生時期を通知します。
+                   </li>
+                 </ul>
+               </div>
+               <div class="terms_block">
+                 <h2 class="terms_block_title">
+                   第12条：個人情報の取扱い
+                 </h2>
+                 <p class="terms_block_text">
+                   当社は、本サービスの利用によって取得する個人情報については、当社「プライバシーポリシー」に従い適切に取り扱うものとします。
+                 </p>
+               </div>
+               <div class="terms_block">
+                 <h2 class="terms_block_title">
+                   第13条：通知または連絡
+                 </h2>
+                 <p class="terms_block_text">
+                   利用者と当社との間の通知または連絡は、当社の定める方法によって行うものとします。当社は、利用者から、当社が別途定める方式に従った変更届け出がない限り、現在登録されている連絡先が有効なものとみなして当該連絡先へ通知または連絡を行い、これらは、発信時に利用者へ到達したものとみなします。
+                 </p>
+               </div>
+               <div class="terms_block">
+                 <h2 class="terms_block_title">
+                   第14条：権利義務の譲渡の禁止
+                 </h2>
+                 <p class="terms_block_text">
+                   利用者は、当社の書面による事前の承諾なく、利用契約上の地位または本規約に基づく権利もしくは義務を第三者に譲渡し、または担保に供することはできません。
+                 </p>
+               </div>
+               <div class="terms_block">
+                 <h2 class="terms_block_title">
+                   第15条：準拠法・裁判管轄
+                 </h2>
+                 <ul class="terms_list">
+                   <li class="terms_item">
+                     本規約の解釈にあたっては、日本法を準拠法とします。
+                   </li>
+                   <li class="terms_item">
+                     本サービスに関して紛争が生じた場合には、当社の本社所在地を管轄する裁判所を専属的合意管轄とします。
+                   </li>
+                 </ul>
+               </div>
+               <div class="terms_block">
+                 <p class="terms_block_text right">
+                   以上<br>
+                   2022年7月1日　制定
+                 </p>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+     </div><!---/common_page_content--->
+   </main>
+   <footer>
+     <div class="footer_ham_wrap">
+       <div class="footer_ham animate__animated animate__bounce animate__infinite wow" data-wow-duration="2s">
+         <img src="<?= get_template_directory_uri();?>/static/images/common/img_footer_top.svg" alt="はむれっつ">
+       </div>
+     </div>
+     <div class="footer_main">
+       <div class="common_wrap">
+         <div class="common_inner">
+           <div class="footer_main_content">
+             <div class="footer_main_ham_block">
+               <a href="index.html" class="footer_logo">
+                 <img src="<?= get_template_directory_uri();?>/static/images/common/logo.svg" alt="はむれっつ">
+               </a>
+               <p class="footer_ham_text">
+                 はむれっつとは合同会社FIELDが飼っている架空のハムスターです。<br>
+                 見た目はモッツァレラ、動きは地鶏、触ってみると桜餅。<br>
+                 皆さんの頭の中のお花畑を根こそぎ枯らすハムスターです。
+               </p>
+             </div>
+             <div class="footer_column_category_block">
+               <ul class="footer_main_menu_list">
+                 <li class="footer_main_menu_item">
+                   <a href="column.html" class="footer_main_menu_link">
+                     記事
+                   </a>
+                 </li>
+               </ul>
+               <ul class="footer_column_category_list">
+                 <li class="footer_column_category_item">
+                   <a href="column_list.html" class="footer_column_category_link">
+                     よくある質問
+                   </a>
+                 </li>
+                 <li class="footer_column_category_item">
+                   <a href="column_list.html" class="footer_column_category_link">
+                     よくある質問
+                   </a>
+                 </li>
+                 <li class="footer_column_category_item">
+                   <a href="column_list.html" class="footer_column_category_link">
+                     よくある質問
+                   </a>
+                 </li>
+                 <li class="footer_column_category_item">
+                   <a href="column_list.html" class="footer_column_category_link">
+                     よくある質問
+                   </a>
+                 </li>
+                 <li class="footer_column_category_item">
+                   <a href="column_list.html" class="footer_column_category_link">
+                     よくある質問
+                   </a>
+                 </li>
+                 <li class="footer_column_category_item">
+                   <a href="column_list.html" class="footer_column_category_link">
+                     よくある質問
+                   </a>
+                 </li>
+                 <li class="footer_column_category_item">
+                   <a href="column_list.html" class="footer_column_category_link">
+                     よくある質問
+                   </a>
+                 </li>
+                 <li class="footer_column_category_item">
+                   <a href="column_list.html" class="footer_column_category_link">
+                     よくある質問
+                   </a>
+                 </li>
+               </ul>
+             </div>
+             <div class="footer_main_menu_block">
+               <ul class="footer_main_menu_list">
+                 <li class="footer_main_menu_item">
+                   <a href="comic.html" class="footer_main_menu_link">
+                     漫画
+                   </a>
+                 </li>
+                 <li class="footer_main_menu_item">
+                   <a href="shop/index.html" class="footer_main_menu_link">
+                     オンラインストア
+                   </a>
+                 </li>
+                 <li class="footer_main_menu_item">
+                   <a href="https://store.line.me/stickershop/author/68502/ja" class="footer_main_menu_link">
+                     LINEスタンプ
+                   </a>
+                 </li>
+                 <li class="footer_main_menu_item">
+                   <a href="http://bar-hamlets.com/" class="footer_main_menu_link">
+                     Bar hamlets
+                   </a>
+                 </li>
+                 <li class="footer_main_menu_item">
+                   <a href="contact.html" class="footer_main_menu_link">
+                     お問い合わせ
+                   </a>
+                 </li>
+               </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="footer_top_link_wrap">
+         <a href="#top" class="footer_top_link">
+           <img src="<?= get_template_directory_uri();?>/static/images/common/img_top_link.svg" alt="TOPに戻る">
+         </a>
+       </div>
+     </div>
+     <div class="footer_menu">
+       <div class="common_wrap">
+         <div class="common_inner">
+           <ul class="footer_menu_list">
+             <li class="footer_menu_item">
+               <a href="https://field.asia/" class="footer_menu_link">
+                 運営会社
+               </a>
+             </li>
+             <li class="footer_menu_item">
+               <a href="privacy.html" class="footer_menu_link">
+                 プライバシーポリシー
+               </a>
+             </li>
+             <li class="footer_menu_item">
+               <a href="terms.html" class="footer_menu_link">
+                 利用規約
+               </a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </div>
+     <div class="footer_copy">
+       <div class="common_wrap">
+         <div class="common_inner">
+           <p class="copy">
+             Copyright &copy;はむれっつ All Rights Reserved.
+           </p>
+         </div>
+       </div>
+     </div>
+   </footer>
+   <script type="text/javascript" src="<?= get_template_directory_uri();?>/static/js/common.js">
+   </script>
+ </body>
+</html>

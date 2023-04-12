@@ -1,0 +1,356 @@
+/*=================
+
+   form.scss
+
+=======================*/
+
+.form_top_info_block{
+	background: #f2f2f2;
+	padding: 15px;
+	margin: 0 0 15px;
+	.form_top_info_text{
+		font-size: 14px;
+		color: #000;
+		line-height: 1.7;
+		@extend .fg;
+	}
+	.form_top_info_subtext{
+		font-size: 11px;
+		line-height: 1.7;
+		color: red;
+		@extend .fg;
+	}
+}
+
+.form_wrap{
+	background: #fff;
+  padding: 50px 100px;
+	border: 4px dotted $b_gray;
+	border-radius: 10px;
+  @media #{$size960}{
+	  padding: 25px 15px;
+  }
+  .form_common_block{
+	  margin: 0 0 20px;
+  }
+  .form_common_title{
+	  font-size: 16px;
+		color: #000;
+		margin: 0 0 10px;
+		font-family: 'NotoSansCJKjp-Medium', sans-serif;
+	  font-weight: normal;
+	  font-style: normal;
+		@media #{$size640}{
+			font-size: 14px;
+		}
+		small{
+			font-size: 12px;
+		}
+		span{
+			font-size: 11px;
+			background: $black;
+			color: #fff;
+			padding: 3px 7px;
+			display: inline-block;
+			vertical-align: 0;
+			margin: 0 0 0 10px;
+		}
+  }
+}
+
+.form_common_input{
+	font-size: 16px;
+	color: #000;
+	height: 46px;
+	border: 1px $gray solid;
+	padding: 0 10px;
+	background: #fff;
+	margin: 0 0 10px;
+	@extend .fg;
+	@include placeholderColor(#bdbdbd);
+	&.w100{
+		width: 100%;
+	}
+	&.w48{
+		width: 48.5%;
+	}
+	&.w30{
+		width: 30%;
+	}
+	&.w23{
+		width: 23%;
+		@media #{$size640}{
+			padding: 0 5px;
+		}
+	}
+}
+.form_common_select{
+  font-size: 16px;
+	color: #000;
+	height: 46px;
+	border: 1px $gray solid;
+	padding: 0 20px 0 10px;
+	background: url($get_img+"common/arrow_icon03.png") 98% center no-repeat #fff;
+	background-size: 11px;
+	margin: 0 0 10px;
+	-moz-appearance: none;
+	     appearance: none;
+	-webkit-appearance: none;
+	@include border-radius(0);
+	@extend .fg;
+	@include placeholderColor(#bdbdbd);
+	&.w100{
+		width: 100%;
+	}
+	&.w47{
+		width: 47%;
+	}
+}
+.form_common_textarea{
+  width: 100%;
+  font-size: 16px;
+	color: #000;
+	height:200px;
+	border: 1px $gray solid;
+	padding: 10px;
+	background: #fff;
+	margin: 0 0 10px;
+	resize: none;
+	@extend .fg;
+	@include placeholderColor(#bdbdbd);
+}
+
+.form_submit_btn{
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: $yellow;
+  margin: 0 auto;
+  padding: 0 30px;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  color: $black;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+	border: none;
+	outline: none;
+}
+
+.form_important_text{
+	font-size: 14px;
+	padding: 0 20px;
+	margin: 0 0 20px;
+	line-height: 1.5;
+	color: red;
+	@extend .fg;
+	a{
+		color: $blue;
+		@extend %common_a_transition;
+	}
+}
+
+.form_common_inner{
+	-js-display: flex;
+	display:flex;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display: -webkit-flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-webkit-box-pack:justify;
+	-ms-flex-pack:justify;
+	justify-content:space-between;
+}
+
+.form_zip_inner{
+	-js-display: flex;
+	display:flex;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display: -webkit-flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	span{
+		font-size: 15px;
+		margin: 0 20px 10px;
+		@extend .fg;
+		@media #{$size750}{
+			margin: 0 7px 10px;
+		}
+	}
+}
+
+/* form confirm */
+
+.form_confirm_text{
+	font-size: 13px;
+	color: #000;
+	line-height: 1.5;
+	@extend .fg;
+}
+
+/* thanks */
+
+.form_thanks_text{
+	text-align: center;
+	margin: 0 0 20px;
+	font-size: 16px;
+	color: #000;
+	line-height: 1.8;
+	@extend .fg;
+	@media #{$size750}{
+		font-size: 14px;
+	}
+	a{
+		color: $black;
+		font-family: 'NotoSansCJKjp-Bold', sans-serif;
+	  font-weight: normal;
+	  font-style: normal;
+		text-decoration: underline;
+	}
+}
+
+.order_number{
+	text-align: center;
+	font-size: 15px;
+	color: $blue;
+	margin: 0 0 20px;
+	letter-spacing: 0.05em;
+	line-height: 1.2;
+	font-weight: bold;
+	@extend .fg;
+}
+
+.back_btn{
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 60px;
+  border-radius: 30px;
+	border: 1px solid $black;
+  background-color: $white;
+  margin: 0 auto;
+  padding: 0 30px;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  color: $black;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+}
+
+.register_text{
+	font-family: 'NotoSansCJKjp-Regular', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+	font-size: 16px;
+	color: $black;
+	line-height: 1.6;
+	margin: 0 0 40px;
+	@media #{$size750}{
+		font-size: 14px;
+		margin: 0 0 30px;
+	}
+}
+
+.forget_link{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	margin: 10px 0 50px 0;
+	font-family: 'NotoSansCJKjp-Regular', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+	font-size: 14px;
+	color: $black;
+	line-height: 1.6;
+	img{
+		width: 5px;
+		margin: 0 10px 0 0;
+	}
+}
+
+.register_link_btn_wrap{
+	padding: 30px 0 0 0;
+	border-top: 1px solid $gray;
+}
+
+.register_comment{
+	font-family: 'NotoSansCJKjp-Regular', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+	font-size: 14px;
+	color: $black;
+	line-height: 1.6;
+	text-align: center;
+	margin: 0 0 10px;
+}
+
+.register_link_btn{
+	outline: none;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+  max-width: 300px;
+  width: 95%;
+  margin: 0 auto;
+  height: 60px;
+  text-align: center;
+  padding: 0;
+  border: none;
+  background: $black;
+  color: $white;
+  cursor: pointer;
+  border-radius: 40px;
+	font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 800;
+}
+
+.form_thanks_img{
+	width: 100%;
+	max-width: 260px;
+	margin: 0 auto 50px;
+	@media #{$size750}{
+		max-width: 200px;
+		margin: 0 auto 30px;
+	}
+	img{
+		width: 100%;
+	}
+}

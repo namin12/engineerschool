@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.122" y1="0.155" x2="0.802" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4c64d3"/>
+      <stop offset="0.345" stop-color="#cf2e92"/>
+      <stop offset="0.69" stop-color="#f26939"/>
+      <stop offset="1" stop-color="#ffdd83"/>
+    </linearGradient>
+  </defs>
+  <g id="グループ_338" data-name="グループ 338" transform="translate(18687 -6171)">
+    <rect id="長方形_214" data-name="長方形 214" width="40" height="40" rx="20" transform="translate(-18687 6171)" fill="url(#linear-gradient)"/>
+    <path id="icon_insta_w" d="M12.352.012c-5.059,0-9.863-.45-11.7,4.256C-.1,6.212.006,8.736.006,12.35c0,3.171-.1,6.152.648,8.081,1.831,4.709,6.674,4.257,11.7,4.257,4.845,0,9.84.5,11.7-4.257.759-1.963.648-4.45.648-8.081,0-4.82.266-7.932-2.073-10.268C20.252-.285,17.049.012,12.346.012ZM11.246,2.235c10.553-.017,11.9-1.189,11.155,15.1-.263,5.76-4.652,5.128-10.047,5.128-9.837,0-10.12-.281-10.12-10.115,0-9.948.78-10.1,9.012-10.112Zm7.7,2.048a1.48,1.48,0,1,0,1.481,1.48A1.481,1.481,0,0,0,18.943,4.283ZM12.352,6.014A6.335,6.335,0,1,0,18.69,12.35,6.338,6.338,0,0,0,12.352,6.014Zm0,2.223c5.441,0,5.448,8.225,0,8.225S6.9,8.237,12.352,8.237Z" transform="translate(-18679.279 6178.72)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>はむれっつオンラインストア</title>
+<link rel="shortcut icon" type="image/x-icon" href="<?= get_template_directory_uri();?>/static/favicon.ico">
+<meta name="description" content="●●●">
+<meta name="Keywords" content="●●●">
+<!-- ピンチによる拡大・縮小ができない -->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<!-- ピンチによる拡大・縮小ができる -->
+<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<meta property="og:type" content="website">
+<meta property="og:title" content=" ">
+<meta property="og:image" content="static/ogp.png">
+<meta property="og:site_name" content="はむれっつオンラインストア">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<link rel="stylesheet" href="<?= get_template_directory_uri();?>/static/css/style.css" media="all">
+<link rel="stylesheet" href="<?= get_template_directory_uri();?>/static/css/icon_style.css" media="all">
+<link rel="stylesheet" href="<?= get_template_directory_uri();?>/static/css/reset.css" media="all">
+<link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri();?>/static/js/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri();?>/static/js/slick/slick-theme.css"/>
+<link rel="apple-touch-icon" href="<?= get_template_directory_uri();?>/static/webclip.png">
+<!-- <link href="<?= get_template_directory_uri();?>/static/font/awesome/font-awesome.min.css" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://use.typekit.net/ptk0dcd.css"><!---futura--->
+
+<script type="text/javascript" src="<?= get_template_directory_uri();?>/static/js/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="<?= get_template_directory_uri();?>/static/js/slick/slick.min.js"></script>
+<script type="text/javascript" src="<?= get_template_directory_uri();?>/static/js/flexibility.js"></script>
+<!---mplus 1p--->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+<!---/mplus 1p--->
+<!---Oswald--->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+<!---/Oswald--->
+<!--[if lt IE 9]><script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+</head>
+
+<body>
+
+  <header>
+    <div class="header_wrap">
+      <div class="pc_header">
+        <div class="pc_header_inner">
+          <a href="index.html" class="pc_header_logo">
+            <img src="<?= get_template_directory_uri();?>/static/images/common/logo.svg" alt="はむれっつオンラインストア">
+          </a>
+          <div class="pc_header_menu_block">
+            <ul class="pc_header_menu_list">
+              <li class="pc_header_menu_item">
+                <a href="item_list.html" class="pc_header_menu_link">
+                  <div class="pc_header_menu_icon">
+                    <img src="<?= get_template_directory_uri();?>/static/images/common/icon_item.svg" alt="アイテム">
+                  </div>
+                  <div class="pc_header_menu_detail">
+                    <p class="pc_header_menu_title_en">
+                      ITEM
+                    </p>
+                    <p class="pc_header_menu_title">
+                      アイテム
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="pc_header_menu_item">
+                <a href="guide.html" class="pc_header_menu_link">
+                  <div class="pc_header_menu_icon">
+                    <img src="<?= get_template_directory_uri();?>/static/images/common/icon_guide.svg" alt="アイテム">
+                  </div>
+                  <div class="pc_header_menu_detail">
+                    <p class="pc_header_menu_title_en">
+                      SHOPPING GUIDE
+                    </p>
+                    <p class="pc_header_menu_title">
+                      ショッピングガイド
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="pc_header_menu_item">
+                <a href="faq.html" class="pc_header_menu_link">
+                  <div class="pc_header_menu_icon">
+                    <img src="<?= get_template_directory_uri();?>/static/images/common/icon_faq.svg" alt="よくある質問">
+                  </div>
+                  <div class="pc_header_menu_detail">
+                    <p class="pc_header_menu_title_en">
+                      FAQ
+                    </p>
+                    <p class="pc_header_menu_title">
+                      よくある質問
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="pc_header_menu_item">
+                <a href="../index.html" class="pc_header_menu_link">
+                  <div class="pc_header_menu_icon">
+                    <img src="<?= get_template_directory_uri();?>/static/images/common/icon_ham.svg" alt="はむれっつ">
+                  </div>
+                  <div class="pc_header_menu_detail">
+                    <p class="pc_header_menu_title_en">
+                      SITE
+                    </p>
+                    <p class="pc_header_menu_title">
+                      はむれっつ公式サイト
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="pc_header_menu_btn">
+              <a href="login.html" class="pc_header_login_btn">
+                ログイン
+              </a>
+              <a href="index.html" class="pc_header_logout_btn" style="display:none;">
+                ログアウト
+              </a>
+              <a href="register.html" class="pc_header_register_btn">
+                会員登録
+              </a>
+              <a href="mypage.html" class="pc_header_mypage_btn" style="display:none;">
+                マイページ
+              </a>
+            </div>
+            <ul class="pc_shop_menu_list">
+              <li class="pc_shop_menu_item">
+                <a href="favorite.html" class="pc_shop_menu_link">
+                  <img src="<?= get_template_directory_uri();?>/static/images/common/icon_favorite.svg" alt="お気に入りリスト">
+                </a>
+              </li>
+              <li class="pc_shop_menu_item">
+                <a href="shopping_cart.html" class="pc_shop_menu_link pc_cart">
+                 <img src="<?= get_template_directory_uri();?>/static/images/common/icon_cart.svg" alt="お買い物カゴ">
+                 <span class="header_cart_num">
+                   <small>1</small>
+                 </span>
+               </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sp_header">
+     <div class="header_sp_wrap">
+       <a href="index.html" class="header_sp_logo">
+         <img src="<?= get_template_directory_uri();?>/static/images/common/logo.svg" alt="はむれっつオンラインストア">
+       </a>
+       <div type="button" class="header_menu_btn" id="MenuOpen">
+         <img src="<?= get_template_directory_uri();?>/static/images/common/menu_hamburger.svg" alt="メニュー">
+       </div>
+     </div>
+     <div class="common_filter" id="HeaderFilter">
+     </div>
+     <div class="header_popup_block" id="HeaderMenu">
+       <div class="header_popup_inner">
+         <div class="header_close_btn" id="MenuClose">
+           <img src="<?= get_template_directory_uri();?>/static/images/common/menu_close.svg" alt="メニュー">
+         </div>
+         <ul class="sp_main_menu_list">
+           <li class="sp_main_menu_item">
+             <a href="item_list.html" class="sp_main_menu_link">
+               <div class="sp_main_menu_link_icon">
+                 <img src="<?= get_template_directory_uri();?>/static/images/common/icon_item.svg" alt="アイテム一覧">
+               </div>
+               <div class="sp_main_menu_link_detail">
+                 <p class="sp_main_menu_link_title_en">
+                   ITEM
+                 </p>
+                 <p class="sp_main_menu_link_title">
+                   アイテム
+                 </p>
+               </div>
+             </a>
+           </li>
+           <li class="sp_main_menu_item">
+             <a href="guide.html" class="sp_main_menu_link">
+               <div class="sp_main_menu_link_icon">
+                 <img src="<?= get_template_directory_uri();?>/static/images/common/icon_guide.svg" alt="ショッピングガイド">
+               </div>
+               <div class="sp_main_menu_link_detail">
+                 <p class="sp_main_menu_link_title_en">
+                   SHOPPING GUIDE
+                 </p>
+                 <p class="sp_main_menu_link_title">
+                   ショッピングガイド
+                 </p>
+               </div>
+             </a>
+           </li>
+           <li class="sp_main_menu_item">
+             <a href="faq.html" class="sp_main_menu_link">
+               <div class="sp_main_menu_link_icon">
+                 <img src="<?= get_template_directory_uri();?>/static/images/common/icon_faq.svg" alt="よくある質問">
+               </div>
+               <div class="sp_main_menu_link_detail">
+                 <p class="sp_main_menu_link_title_en">
+                   FAQ
+                 </p>
+                 <p class="sp_main_menu_link_title">
+                   よくある質問
+                 </p>
+               </div>
+             </a>
+           </li>
+           <li class="sp_main_menu_item">
+             <a href="../index.html" class="sp_main_menu_link">
+               <div class="sp_main_menu_link_icon">
+                 <img src="<?= get_template_directory_uri();?>/static/images/common/icon_ham.svg" alt="はむれっつ公式サイト">
+               </div>
+               <div class="sp_main_menu_link_detail">
+                 <p class="sp_main_menu_link_title_en">
+                   SITE
+                 </p>
+                 <p class="sp_main_menu_link_title">
+                   はむれっつ公式サイト
+                 </p>
+               </div>
+             </a>
+           </li>
+         </ul>
+         <ul class="sp_shop_sub_menu_list">
+           <li class="sp_shop_sub_menu_item">
+             <a href="login.html" class="sp_login_btn">
+               ログイン
+             </a>
+           </li>
+           <!---
+           <li class="sp_shop_sub_menu_item">
+             <a href="index.html" class="sp_login_btn">
+               ログアウト
+             </a>
+           </li>
+           --->
+           <li class="sp_shop_sub_menu_item">
+             <a href="register.html" class="sp_register_btn">
+               会員登録
+             </a>
+           </li>
+           <!---
+           <li class="sp_shop_sub_menu_item">
+             <a href="mypage.html" class="sp_register_btn">
+               マイページ
+             </a>
+           </li>
+           --->
+         </ul>
+         <ul class="sp_shop_menu_list">
+           <li class="sp_shop_menu_item">
+             <a href="favorite.html" class="sp_shop_menu_link">
+               <img src="<?= get_template_directory_uri();?>/static/images/common/icon_favorite.svg" alt="お気に入りリスト">
+             </a>
+           </li>
+           <li class="sp_shop_menu_item">
+             <a href="shopping_cart.html" class="sp_shop_menu_link sp_cart">
+              <span class="header_cart_num">
+                <small>1</small>
+              </span>
+              <img src="<?= get_template_directory_uri();?>/static/images/common/icon_cart.svg" alt="お買い物カゴ">
+            </a>
+           </li>
+         </ul>
+       </div>
+     </div><!---/header_popup_block--->
+  </header>
+
+<main class="page_main">
+  <div class="pankuzu_wrap">
+     <div class="common_wrap">
+       <div class="common_inner">
+         <ul class="pankuzu_list">
+           <li class="pankuzu_item">
+             <a href="index.html" class="pankuzu_link">
+               TOP
+             </a>
+           </li>
+           <li class="pankuzu_item">
+             マイページ
+           </li>
+         </ul>
+       </div>
+     </div>
+    </div><!---/pankuzu--->
+	<div class="common_column_wrap">
+		<div class="common_main_block">
+			<div class="item_wrap">
+				<h1 class="common_main_title">
+					<span class="title_text_jp">マイページ</span>
+          <span class="title_text_en">MYPAGE</span>
+				</h1>
+        <div class="form_wrap">
+          <ul class="mypage_menu_list">
+            <li class="mypage_menu_item">
+              <a href="prof.html" class="mypage_menu_link">
+                会員登録情報
+              </a>
+            </li>
+            <li class="mypage_menu_item">
+              <a href="history.html" class="mypage_menu_link">
+                注文履歴
+              </a>
+            </li>
+            <li class="mypage_menu_item">
+              <a href="favorite.html" class="mypage_menu_link">
+                お気に入り一覧
+              </a>
+            </li>
+            <li class="mypage_menu_item">
+              <a href="mail_input.html" class="mypage_menu_link">
+                メールアドレス変更
+              </a>
+            </li>
+            <li class="mypage_menu_item">
+              <a href="password_input.html" class="mypage_menu_link">
+                パスワード変更
+              </a>
+            </li>
+            <li class="mypage_menu_item">
+              <a href="index.html" class="mypage_menu_link">
+                ログアウト
+              </a>
+            </li>
+          </ul>
+        </div>
+			</div>
+		</div>
+	</div>
+</main>
+
+<footer>
+  <div class="footer_ham_wrap">
+    <div class="footer_ham_block">
+      <div class="footer_ham">
+        <img src="<?= get_template_directory_uri();?>/static/images/common/img_footer_ham.svg" alt="はむれっつ">
+      </div>
+    </div>
+    <div class="footer_regi_block">
+      <img src="<?= get_template_directory_uri();?>/static/images/common/footer_regi.svg" alt="">
+    </div>
+  </div>
+  <div class="footer_top">
+    <div class="common_wrap">
+      <div class="common_inner">
+        <a href="../index.html" class="footer_logo">
+          <img src="<?= get_template_directory_uri();?>/static/images/common/logo.svg" alt="HALTEN">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer_bottom">
+    <div class="common_wrap">
+      <div class="common_inner">
+        <div class="footer_menu_block">
+          <ul class="footer_main_menu_list">
+            <li class="footer_main_menu_item">
+              <a href="https://field.asia/" class="footer_main_menu_link">
+                運営会社
+              </a>
+            </li>
+            <li class="footer_main_menu_item">
+              <a href="privacy.html" class="footer_main_menu_link">
+                プライバシーポリシー
+              </a>
+            </li>
+            <li class="footer_main_menu_item">
+              <a href="terms.html" class="footer_main_menu_link">
+                利用規約
+              </a>
+            </li>
+            <li class="footer_main_menu_item">
+              <a href="notation.html" class="footer_main_menu_link">
+                特定商取引法に基づく表記
+              </a>
+            </li>
+            <li class="footer_main_menu_item">
+              <a href="guide.html" class="footer_main_menu_link">
+                ご利用ガイド
+              </a>
+            </li>
+            <li class="footer_main_menu_item">
+              <a href="contact.html" class="footer_main_menu_link">
+                お問い合わせ
+              </a>
+            </li>
+          </ul>
+          <a href="../index.html" class="footer_site_banner">
+            <img src="<?= get_template_directory_uri();?>/static/images/common/site_banner.svg" alt="はむれっつ公式サイトはこちら">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copy_block">
+    <div class="common_wrap">
+      <div class="common_inner">
+        <p class="copy">
+          Copyright &copy; はむれっつ All rights reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="<?= get_template_directory_uri();?>/static/js/common.js">
+</script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+/*=================
+
+   brand.scss
+
+=======================*/
+
+.brand_title{
+	text-align: center;
+	color: $blue;
+	margin: 0 0 20px;
+	.title_text_en{
+		font-size: 30px;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 auto 5px;
+		position: relative;
+		word-break: break-word;
+		max-width: 85%;
+		@extend .fe;
+		&:before{
+			content:"";
+			display: block;
+			width: 15px;
+			height: 2px;
+			background: $blue;
+			position: absolute;
+			left: -25px;
+			top: 50%;
+			@include transform(translateY(-50%));
+		}
+		&:after{
+			content:"";
+			display: block;
+			width: 15px;
+			height: 2px;
+			background: $blue;
+			position: absolute;
+			right: -25px;
+			top: 50%;
+			@include transform(translateY(-50%));
+		}
+		@media #{$size750}{
+			font-size: 20px;
+		}
+	}
+	.title_text_jp{
+		font-size: 11px;
+		display: block;
+		vertical-align: -2px;
+		font-weight: bold;
+		@extend .fg;
+		@media #{$size750}{
+			display: block;
+			font-size: 10px;
+			margin: 2px 0 0;
+			&.special{
+				display: inline-block;
+				margin: 0;
+			}
+		}
+	}
+}
+
+.brand_like_btn{
+	outline: none;
+	background: $pink;
+	@include border-radius(20px);
+	color: #fff;
+	height: 40px;
+	text-align: center;
+	border: none;
+	max-width: 300px;
+	width: 100%;
+	cursor: pointer;
+	margin: 0 auto 30px;
+	display: block;
+	@extend %common_a_transition;
+	@extend .fg;
+	@media #{$size750}{
+		height: 30px;
+	}
+	&.active{
+		background: none;
+	}
+	span{
+		font-size: 13px;
+		display: inline-block;
+		vertical-align: 3px;
+		margin: 0 0 0 6px;
+		font-weight: bold;
+		@media #{$size750}{
+			font-size: 11px;
+		}
+	}
+	.icon-before_fav{
+		display: inline-block;
+		font-size: 20px;
+		vertical-align: middle;
+		@media #{$size750}{
+			font-size: 16px;
+		}
+	}
+	.icon-fav{
+		display: inline-block;
+		font-size: 20px;
+		vertical-align: middle;
+		color: $pink;
+		@media #{$size750}{
+			font-size: 16px;
+		}
+	}
+	.no_active{
+		display: none;
+	}
+}
+
+.brand_info{
+	font-size: 14px;
+	color: #000;
+	line-height: 1.7;
+	margin: 0 0 40px;
+	@extend .fg;
+	@media #{$size750}{
+		font-size: 12px;
+	}
+}
+
+.brand_anchor_block{
+	-js-display: flex;
+	display:flex;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display: -webkit-flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-webkit-box-pack:justify;
+	-ms-flex-pack:justify;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	-webkit-flex-wrap:wrap;
+	-moz-flex-wrap:wrap;
+	-ms-flex-wrap:wrap;
+	width: 100%;
+	margin: 0 auto 40px;
+	.brand_anchor_link{
+		font-size: 13px;
+		display: block;
+		width: 32%;
+		text-decoration: none;
+		background: $blue;
+		padding: 15px 0;
+		text-align: center;
+		color: #fff;
+		letter-spacing: 1px;
+		position: relative;
+		@include border-radius(30px);
+		@extend %common_a_transition;
+		@extend .fg;
+		@media #{$size960}{
+			font-size: 11px;
+			padding: 10px 0;
+		}
+		@media #{$size540}{
+			width: 100%;
+			margin: 0 0 10px;
+			font-size: 12px;
+		}
+		&:after{
+			content: "";
+			display: block;
+			width: 11px;
+			height: 6px;
+			background: url($get_img+"common/arrow_icon02.png") center center no-repeat;
+			background-size: contain;
+			position: absolute;
+			right:10px;
+			top: 50%;
+			@include transform(translateY(-50%));
+		}
+	}
+}

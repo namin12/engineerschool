@@ -12,9 +12,9 @@ $food['fruits']['grape'] = 'ワイン';
 
 foreach ($food['meat'] as $key => $val) {
   echo $key;
-  echo "<pre>";
+  echo "<br>";
   echo $val;
-  echo "<pre>";
+  echo "<br>";
 }
 
 

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-アートボード_20">
+      <rect width="60" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="アートボード_20" data-name="アートボード – 20" clip-path="url(#clip-アートボード_20)">
+    <g id="Free_Clock_icon_part_2無料の時計のアイコン_2" data-name="Free Clock icon part 2無料の時計のアイコン 2" transform="translate(8.457 8.457)">
+      <path id="パス_263" data-name="パス 263" d="M21.543,0A21.543,21.543,0,1,0,43.086,21.543,21.567,21.567,0,0,0,21.543,0Zm0,37.957A16.414,16.414,0,1,1,37.957,21.543,16.432,16.432,0,0,1,21.543,37.957Z" fill="#707070"/>
+      <path id="パス_264" data-name="パス 264" d="M163.151,115.758a1.952,1.952,0,0,0-1.952,1.952v8.837l-6.231,6.231a1.952,1.952,0,1,0,2.761,2.761l7.375-7.375V117.71A1.952,1.952,0,0,0,163.151,115.758Z" transform="translate(-141.403 -106.017)" fill="#707070"/>
+    </g>
+  </g>
+</svg>
